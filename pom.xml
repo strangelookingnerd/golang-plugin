@@ -13,8 +13,10 @@
   <packaging>hpi</packaging>
 
   <properties>
-    <jenkins.version>2.190.3</jenkins.version>
-    <jenkins.bom.artifactId>2.190.x</jenkins.bom.artifactId>
+    <!-- https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/ -->
+    <jenkins.baseline>2.190</jenkins.baseline>
+    <jenkins.version>${jenkins.baseline}.3</jenkins.version>
+    <jenkins.bom.artifactId>2.${jenkins.baseline}.x</jenkins.bom.artifactId>
     <jenkins.bom.version>16</jenkins.bom.version>
     <java.level>8</java.level>
   </properties>
